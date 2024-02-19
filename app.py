@@ -14,15 +14,16 @@ from utils import (
 st.set_page_config(page_title="Demo: Text-to-Speech",
                    page_icon="🎙")
 
-st.title("Try OpenAI Text-to-Speech 🎙")
-st.info("""
-**About:** This app is a personal project, not affliated with OpenAI.
-        
-**Is this really free?** I have some OpenAI API credits expiring on 1 March 2024. So... yes :)
-
-**Contact:** [X](https://www.x.com/gabchuayz) or [LinkedIn](https://www.linkedin.com/in/gabriel-chua)
-""")
-
+st.title("OpenAI's Text-to-Speech 🎙")
+with st.expander("About this app"):
+    st.info("""
+    **About:** This is a personal project, not affliated with OpenAI.
+            
+    **Is this really free?** I have some OpenAI API credits expiring on 1 March 2024. So... yes :)
+    
+    **Contact:** [X](https://www.x.com/gabchuayz) or [LinkedIn](https://www.linkedin.com/in/gabriel-chua)
+    """)
+    
 if "audio" not in st.session_state:
     st.session_state["audio"] = None
 
