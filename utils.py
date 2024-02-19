@@ -34,7 +34,7 @@ def moderation_check(text):
 def zero_shot_nsfw_classifier(text):
     """Check if the given text is safe for work using gpt4 zero-shot classifer."""
     response = client.chat.completions.create(
-        model="gpt-4-0125-preview",
+        model="gpt-3.5-turbo-0125",
         messages=[{"role": "system", "content": "Is the given text NSFW? If yes, return `1`, else return `0`"},
                   {"role": "user", "content": text}],
         max_tokens=1,
@@ -49,7 +49,7 @@ def zero_shot_nsfw_classifier(text):
 def text_to_speech(text, voice):
     speech_file_path = Path("audio.mp3")
     response = client.audio.speech.create(
-      model="tts-1-hd",
+      model="tts-1",
       voice=voice,
       input=text
     )
