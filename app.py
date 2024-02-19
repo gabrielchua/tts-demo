@@ -17,7 +17,7 @@ st.set_page_config(page_title="Demo: Text-to-Speech",
 st.title("OpenAI's Text-to-Speech 🎙")
 with st.expander("About this app"):
     st.info("""
-    **About:** This is a personal project, not affliated with OpenAI.
+    This is a personal project, not affliated with OpenAI.
             
     **Is this really free?** I have some OpenAI API credits expiring on 1 March 2024. So... yes :)
     
