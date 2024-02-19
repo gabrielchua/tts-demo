@@ -39,7 +39,7 @@ We are committed to providing public goods that help society navigate the path t
 st.set_page_config(page_title="AI Text-to-Speech",
                    page_icon="🎙")
 
-st.title("OpenAI's Text-to-Speech 🎙")
+st.title("Try OpenAI's Text-to-Speech 🎙")
 with st.expander("About this app"):
     st.info("""
     This is a personal project, not affliated with OpenAI.
