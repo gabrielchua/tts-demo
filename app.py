@@ -11,7 +11,7 @@ from utils import (
     zero_shot_nsfw_classifier
 )
 
-st.set_page_config(page_title="Demo: Text-to-Speech",
+st.set_page_config(page_title="AI Text-to-Speech",
                    page_icon="🎙")
 
 st.title("OpenAI's Text-to-Speech 🎙")
