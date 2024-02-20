@@ -52,7 +52,7 @@ with st.expander("About this app"):
 if "audio" not in st.session_state:
     st.session_state["audio"] = None
 
-text = st.text_area("Your text", value = DEFAULT_TEXT, max_chars=4096, height=500)
+text = st.text_area("Your text", value = DEFAULT_TEXT, max_chars=4096, height=250)
 voice = st.radio("Voice", ["alloy", "echo", "fable", "onyx", "nova", "shimmer"], horizontal = True, help="Previews can be found [here](https://platform.openai.com/docs/guides/text-to-speech/voice-options)")
 
 if st.button("Generate Audio"):
