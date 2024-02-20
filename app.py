@@ -72,6 +72,7 @@ if st.button("Generate Audio"):
         audio_file = open("audio.mp3", 'rb')
         audio_bytes = audio_file.read()
         st.audio(audio_bytes, format='audio/mp3')
+        st.write("If you are viewing this on mobile, the audio may not play. You may need to download the audio first.")
         st.download_button(label="Download audio",
                              data=audio_bytes,
                              file_name="audio.mp3",
