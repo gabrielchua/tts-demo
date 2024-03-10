@@ -40,6 +40,7 @@ st.set_page_config(page_title="AI Text-to-Speech",
                    page_icon="🎙")
 
 st.title("Try OpenAI's Text-to-Speech 🎙")
+st.warning("This demo is currently not available.")
 with st.expander("About this app"):
     st.info("""
     This is a personal project, not affliated with OpenAI.
